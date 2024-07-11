@@ -2,7 +2,9 @@ package com.gn.board.vo;
 
 import java.time.LocalDateTime;
 
-public class Board {
+import com.gn.common.Paging;
+
+public class Board extends Paging{
 	private int board_no;
 	private String board_title;
 	private String board_content;
@@ -12,7 +14,7 @@ public class Board {
 	private String ori_thumbnail;
 	public Board() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	private String new_thumbnail;
 	public Board(int board_no, String board_title, String board_content, int board_writer, LocalDateTime reg_date,

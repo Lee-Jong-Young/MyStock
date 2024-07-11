@@ -15,6 +15,14 @@ public class BoardService {
 		close(conn);
 		return result;
 	}
+	
+	public int selectBoardCount(Board option) {
+		Connection conn = getConnection();
+		int result = new BoardDao().selectBoardCount(option, conn);
+		close(conn);
+		return result;
+	}
+	
 	public List<Board> selectBoardList(Board option) {
 		Connection conn = getConnection();
 		List<Board> list = new BoardDao().selectBoardList(option,conn);

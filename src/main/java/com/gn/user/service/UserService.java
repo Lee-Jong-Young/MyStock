@@ -15,4 +15,11 @@ public class UserService {
 		close(conn);
 		return resultvo;
 	}
+	public int modify(User u) {
+		Connection conn = getConnection();
+		int result = new UserDao().modify(u,conn);
+		close(conn);
+		return result;
+	}
+	
 }
