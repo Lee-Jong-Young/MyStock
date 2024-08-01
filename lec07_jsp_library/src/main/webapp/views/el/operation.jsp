@@ -47,6 +47,6 @@
 		${true && true } 또는 ${true and true }<br>
 		${false || true } 또는 ${false or true }
 	</p>
-
+	
 </body>
 </html>
